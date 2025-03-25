@@ -1,0 +1,197 @@
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVerse - Cinematic Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MovieVerse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="hero">
+        <h1 class="animated-title">WELCOME TO MOVIEVERSE</h1>
+        <p class="sub-text">A Journey Through Cinema</p>
+    </div>
+
+    
+    <section class="parallax">
+        <div class="overlay"></div>
+        <h2 class="parallax-text">Experience the Magic of Film</h2>
+    </section>
+
+   
+   <section id="about" class="about">
+    <h2 class="section-title">About Cinematic Typography</h2>
+    <p>Typography plays a crucial role in creating cinematic experiences. From bold title cards to immersive credits, typography sets the tone for storytelling.</p>
+</section>
+
+        <section id="movies" class="movies">
+        <h2 class="section-title">Popular Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/297acd129204217.616629e21fe76.png" alt="Movie 1">
+                <h3>Interstellar</h3>
+            </div>
+            <div class="movie-card">
+                <img src="https://picfiles.alphacoders.com/358/thumb-1920-358373.jpg" alt="Movie 2">
+                <h3>La La Land</h3>
+            </div>
+            <div class="movie-card">
+                <img src="https://cdna.artstation.com/p/assets/images/images/031/645/214/large/shreyas-raut-avatar-2.jpg?1604210989" alt="Movie 3">
+                <h3>Avatar</h3>
+            </div>
+        </div>
+    </section>
+
+ 
+
+   
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+ 
+    <footer>
+        <p>&copy; 2025 MovieVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>  --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVerse - Cinematic Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MovieVerse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="animated-title">WELCOME TO MOVIEVERSE</h1>
+        <p class="sub-text">A Journey Through Cinema</p>
+    </div>
+
+    <!-- Parallax Section -->
+    <section class="parallax">
+        <div class="overlay"></div>
+        <h2 class="parallax-text">Experience the Magic of Film</h2>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Cinematic Typography</h2>
+        <p>Typography plays a crucial role in creating cinematic experiences. From bold title cards to immersive credits, typography sets the tone for storytelling.</p>
+    </section>
+
+    <!-- Movie Showcase (Carousel) -->
+    <section id="movies" class="movies">
+        <h2 class="section-title">Popular Movies</h2>
+        <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/297acd129204217.616629e21fe76.png" class="d-block w-100" alt="Interstellar">
+                    <div class="carousel-caption d-md-block">
+                        <h3>Interstellar</h3>
+                        <p>A visually stunning sci-fi epic about space exploration and time relativity.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picfiles.alphacoders.com/358/thumb-1920-358373.jpg" class="d-block w-100" alt="La La Land">
+                    <div class="carousel-caption d-md-block">
+                        <h3>La La Land</h3>
+                        <p>A beautiful love story told through music, dance, and stunning visuals.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/031/645/214/large/shreyas-raut-avatar-2.jpg?1604210989" class="d-block w-100" alt="Avatar">
+                    <div class="carousel-caption d-md-block">
+                        <h3>Avatar</h3>
+                        <p>James Cameron's groundbreaking sci-fi adventure set in the world of Pandora.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MovieVerse. All rights reserved.</p>
+    </footer>
+
+    <!-- GSAP & Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
